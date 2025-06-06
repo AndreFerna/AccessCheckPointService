@@ -1,14 +1,15 @@
 package co.com.pragma.model.accesscheckpoint;
-import lombok.Builder;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-//import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
+
 
 @Getter
 @Setter
-//@NoArgsConstructor
+@NoArgsConstructor
 @AllArgsConstructor
 @Builder(toBuilder = true)
+@ToString
 public class AccessCheckPoint {
+    private String viewIdentifier;
+    private String userId;
+    private String ip;
 }
